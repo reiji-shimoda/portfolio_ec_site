@@ -4,6 +4,10 @@
 
 ## デモ
 
+![portfolio_ec1](https://user-images.githubusercontent.com/77525920/112145324-8ba94a80-8c1d-11eb-8b0a-7d34b6c2c377.png)
+
+![portfolio_ec2](https://user-images.githubusercontent.com/77525920/112145333-8f3cd180-8c1d-11eb-8bb8-cc30e7b7b8e1.png)
+
 ## 使い方
 
 ユーザーを登録し、ログインする。
@@ -26,9 +30,13 @@
 ## 環境
 
 laravel 6.20.18
+
 php 8.0.1
+
 mysql 15.1
+
 xampp
+
 windows10
 
 ## 参考文献
