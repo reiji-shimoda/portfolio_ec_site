@@ -1,0 +1,199 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+//ここからhome.blade
+//ヘッダー部分
+.card-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 15px;
+    //カート部分
+    .header-right {
+        a {
+            .shopping-count {
+                float: right;
+                color: orange;
+                position: relative;
+                right: 24px;
+                top: -18px;
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+            img {
+                width: 30px;
+            }
+
+        }
+    }
+}
+
+//home商品情報部分(foreach部分)
+.items {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.03);
+    img {
+        border: 1px solid gray;
+        margin: 5px 0;
+        width: 100px;
+    }
+    .item-name {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    .item-price {
+        span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+
+    .item-description {
+        margin-bottom: 5px;
+    }
+
+    .item-button {
+        display: flex;
+        justify-content: space-around;
+        button {
+            background-color: aqua;
+            height: 40px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.notItems {
+    margin: 10px 0 50px;
+    padding-left: 10px;
+}
+
+//ここからpurchase.blade
+// 購入画面
+.purchase-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 50%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.cartInItems {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.03);
+    img {
+        border: 1px solid gray;
+        margin: 5px 0;
+        width: 100px;
+    }
+    .cartInItems-name {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    .cartInItems-price {
+        span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+
+    .cartInItem-totalAmount {
+        span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+}
+
+.purchase-button {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    p {
+        span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+    button {
+        background-color: aqua;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+
+//ここからpurchase_history.blade
+//購入履歴
+nav {
+    a {
+        margin-right: 5px;
+    }
+}
+
+.purchase-historyHeader {
+    font-size: 1.6em;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.purchase-historyItems {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.03);
+    .purchase-history {
+        font-size: 1.2em;
+        img {
+            border: 1px solid gray;
+            margin: 5px 0;
+            width: 100px;
+        }
+        :last-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+//ここからadmin.blade
+#admin-header {
+    a {
+        margin-right: 10px;
+    }
+}
+#admin-blade {
+    p {
+        margin: 5px auto;
+    }
+    .admin-button {
+        background-color: aqua;
+        padding: 5px 15px;
+        margin-top: 15px;
+    }
+}
+
+//ここからshow_registerItems.blade
+.outOfStock {
+    color: red;
+}
